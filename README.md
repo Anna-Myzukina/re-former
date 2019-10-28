@@ -26,6 +26,12 @@ Things you may want to cover:
 ##### Look through these now and then use them to test yourself after doing the assignment:
 
 * How can you view what was submitted by a form?
+If you want to see what your forms are submitting to your Rails app, look through the output that gets printed into your console when you run your $ rails server. Whenever you submit a very basic form for a user email signup, it should include lines that look something like:
+
+     Started POST "/user" for 127.0.0.1 at 2013-11-21 19:10:47 -0800
+     Processing by UsersController#create as HTML
+     Parameters: {"utf8"=>"✓", "authenticity_token"=>"jJa87aK1OpXfjojryBk2Db6thv0K3bSZeYTuW8hF4Ns=", "email"=>"foo@bar.com", "commit"=>"Submit Form"}
+     
 * What is a CSRF Token and why is it necessary?
 * How do you generate the token in Rails?
 * Why is the name attribute of a form input element so important?
